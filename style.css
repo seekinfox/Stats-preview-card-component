@@ -1,0 +1,170 @@
+html,
+body {
+    margin: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*verticle*/
+    align-items: center;
+    /*horizontal*/
+    font-size: 15px;
+    box-sizing: border-box;
+    background: var(--VBblue);
+
+    /*
+    font-family: 'Inter', sans-serif;
+
+    font-family: 'Lexend Deca', sans-serif;
+    */
+}
+
+:root {
+    --VBblue: hsl(233, 47%, 7%);
+    /* main backgrnd*/
+    --Ddblue: hsl(244, 38%, 16%);
+    /*card backgrn*/
+    --Sviolet: hsl(277, 64%, 61%);
+    /*accent*/
+    --White: hsl(0, 0%, 100%);
+    /*main heading stats--not used*/
+    --Stwhite: hsla(0, 0%, 100%, 0.75);
+    /*main paragraph--not used*/
+    --St-white: hsla(0, 0%, 100%, 0.6);
+    /*start heading--not used*/
+
+}
+
+#card {
+    box-sizing: border-box;
+    width: 20.1rem;
+    /*card heigth--re-*/
+    border-radius: 0.6em;
+    background: var(--Ddblue);
+    box-shadow: 0px 0px 5px;
+    margin: 5rem auto;
+}
+
+#hero {
+    width: 20.rem;
+    min-height: 10em;
+    height: 14rem;
+    border-radius: 0.6em 0.6em 0 0;
+    background: linear-gradient(hsla(277, 74%, 61%, 0.5), hsla(277, 74%, 61%, 0.5)), url("https://raw.githubusercontent.com/seekinfox/Stats-preview-card-component/main/images/image-header-mobile.jpg");
+    background-size: 100% 100%;
+    color: hsl(277, 64%, 61%);
+    background-repeat: no-repeat
+}
+
+#summery {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: hsl(244, 38%, 86%);
+    width: 100%;
+    min-height: 10em;
+    /*not a plan*/
+    max-height: 18rem;
+    align-self: center;
+    text-align: center;
+    padding: 1em 2em;
+
+}
+
+span {
+    color: var(--Sviolet);
+}
+
+#summery p {
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: white;
+}
+
+
+.numbers {
+    box-sizing: border-box;
+    color: hsl(244, 38%, 86%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+    line-height: 0.8;
+    margin-bottom: 2.5rem;
+}
+
+.numbers p {
+    line-height: 0;
+    font-size: 12px;
+}
+
+.margin-bottom {
+    margin-bottom: 2.5rem;
+}
+
+.attribution {
+    margin: 0;
+    padding: 0;
+    font-size: 0.7em;
+    color: hsl(277, 64%, 71%);
+
+}
+
+a {
+    color: rebeccapurple;
+    text-decoration: none;
+}
+
+
+@media (min-width: 1000px) {
+
+    html,
+    body {
+        height: 100%;
+    }
+
+    #card {
+        width: 80%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    #hero {
+
+        width: 80%;
+        height: 100%;
+        border-radius: 0 0.6em 0.6em 0;
+        background: linear-gradient(hsla(277, 74%, 61%, 0.5), hsla(277, 74%, 61%, 0.5)), url("https://raw.githubusercontent.com/seekinfox/Stats-preview-card-component/main/images/image-header-desktop.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    #summery {
+        width: 90%;
+        text-align: left;
+        margin: 0 auto;
+        padding-right: 7rem;
+    }
+
+    #bigScreenNumbers {
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .numbers {
+        text-align: left;
+    }
+}
+
+a:visited {
+    color: white;
+    text-decoration: underline;
+}
