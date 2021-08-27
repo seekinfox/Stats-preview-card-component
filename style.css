@@ -130,7 +130,7 @@ a {
     }
 
     #card {
-        width: 80%;
+        width: 60rem;
         display: flex;
         flex-direction: row-reverse;
     }
