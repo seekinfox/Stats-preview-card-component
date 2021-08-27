@@ -137,7 +137,7 @@ a {
 
     #hero {
 
-        width: 80%;
+        width: 100%;
         height: 100%;
         border-radius: 0 0.6em 0.6em 0;
         background: linear-gradient(hsla(277, 74%, 61%, 0.5), hsla(277, 74%, 61%, 0.5)), url("https://raw.githubusercontent.com/seekinfox/Stats-preview-card-component/main/images/image-header-desktop.jpg");
